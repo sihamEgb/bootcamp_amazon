@@ -1,0 +1,232 @@
+/* Utilities */
+
+
+:root{
+
+--primary-color: rgb(240,167,79);
+--secondary-color: rgb(243,207,118);
+--background-color:rgb(255,255,255);
+--border-color:rgb(231,231,231);
+/* navigation bar colors */
+--navbar-1-background: rgb(19,25,33);
+--navbar-2-background:rgb(35,47,62);
+--navbar-3-background: rgb(217,247,235);
+
+/* Text colors */
+--text-primary:rgb(219,126,0);
+--text-dark:rgb(17,17,17);
+--text-light:rgb(255,255,255);
+--text-medium:rgb(203,203,203);
+--text-links:rgb(106,153,217);
+
+--border-color:rgb(234,234,234);
+/* Buttons */
+--btn-text-color: var(--text-dark);
+--btn-border-color: var(--text-dark);
+
+--default-margin: 5px;
+--default-padding: 5px;
+
+--max-width: 1100px;
+--speed-animation: 2s;
+}
+
+/* Text */
+.text--dark{
+	color : var(--text-dark);
+}
+.text--light{
+	color:var(--text-light);
+}
+.text--primary{
+	color: var(--primary-color);
+}
+.text--color--medium{
+	color: rgb(176,176,176);
+	/* var(--text-medium); */
+}
+.text--price{
+  color: var(--text-primary);
+}
+.border--light{
+	border: 1px solid var(--border-color);
+}
+.text--medium{
+	font-size: 17px;
+}
+.text--vertical--align{
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	padding:0 10px;
+}
+.text--strike{
+	text-decoration: line-through;
+}
+.text-padded{
+	padding-right: 50px;
+	display: inline-block;
+	width:70px;
+}
+/* General */
+.divider{
+	width:90%;
+	opacity: 0.3;
+}
+.star-icon{
+  color:var(--primary-color);
+}
+img {
+  width: 100%;
+}
+.link--primary{
+	text-decoration: none;
+}
+.link--primary:hover{
+	color:var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
+}
+.link--light{
+	color:white;
+}
+ul{
+	list-style: none;
+}
+.list--styled{
+	list-style:disc;
+	padding-left: 0;
+}
+.list--styled li{
+	text-align: left;
+	padding-left: 0;
+}
+ul li {
+	padding: .5rem 0;
+	text-align: center;
+	/* margin-left: auto;
+	margin-right:auto;
+	width: 100%; */
+  /* border-bottom: #555 dotted 1px; */
+  /* width: 90%; */
+}
+
+ul li a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Design */
+/* .bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+	color: #fff;
+} */
+
+.py-1 { padding: 1.5rem 0 }
+.py-2 { padding: 2rem 0 }
+.py-3 { padding: 3rem 0 }
+.p-1 { padding: 1.5rem }
+.p-2 { padding: 2rem }
+.p-3 { padding: 3rem }
+
+.l-heading {
+	font-size: 3rem;
+}
+
+
+
+/* Button */
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 30px;
+	color: var(--text-dark);
+	border: 2px solid var(--btn-text-color);
+	border-radius: 5px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.button-main{
+	background-color: transparent;
+	border: none;
+}
+.btn--primary{
+	/* display: flex; */
+	position: relative;
+	/* flex-direction: row; */
+	background: var(--primary-color);
+	display: block;
+	margin: 1px auto;
+	width: 95%;
+	color: var(--text-dark);
+	border: 1px solid black;
+	padding: 10px 0;
+	text-align: center;
+}
+.btn--primary .icon--left{
+	background-color: black;
+	position: absolute;
+	left:0;
+	top:0;
+	bottom: 0;
+	padding: 5px;
+	margin:3px;
+	height: 20px;
+	width: 20px;
+	/* padding: 10px 0; */
+}
+.btn--primary .icon{
+	color: white;
+	padding:2px;
+}
+
+.btn--secondary{
+	background: rgb(235,237,240,0.5);
+	/* background-color: red; */
+	color: var(--text-dark);
+	padding: 5px 10px;
+	border-radius: 2px;
+	color: var(--text-dark);
+	border: 1px solid grey;
+}
+.btn--secondary a{
+	color: black;
+}
+.btn--secondary:hover{
+	background: rgb(235,237,240,1);
+}
+.dropdown{
+	position: relative;
+  display: inline-block;
+}
+.btn--dropdown{
+	/* background-color: #4CAF50; */
+  /* color: white; */
+  /* padding: 16px; */
+  /* font-size: 16px; */
+  /* border: none; */
+}
+.btn--dropdown__content{
+	display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 40px;
+  z-index: 1;
+  
+}
+.dropdown:click .btn--dropdown__content {
+		/* display: block; */
+		background-color: grey;
+}
+
