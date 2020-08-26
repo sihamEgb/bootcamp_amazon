@@ -9,7 +9,9 @@
   <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  
+  <link rel="stylesheet" href="css/utilities.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -29,13 +31,14 @@
     <div class="logo">
       <i class="fab fa-amazon fa-2x"></i>
     </div>
-    <div class="empty"></div>
-    <div>
-      <button>
-        <span>All</span>
+    <!-- <div class="empty"></div> -->
+    <div class = "grow">
+      <!-- <button> -->
+        <button>All</button>
+        <input type="text">
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-search"></i>
-      </button>
+      <!-- </button> -->
     </div>
     <!-- dropdown flag -->
     <div>
@@ -58,8 +61,11 @@
       <strong>&Orders</strong>
     </div>
     <div>
-      <i class="fas fa-shopping-cart fa-2x"></i>
-      Cart
+      <!-- <i><img src="./images/icons/" alt=""></i> -->
+      <i class="fas fa-shopping-cart fa-2x">
+        <span class="itemsNumber">0</span>
+      </i>
+      
     </div>
 
   </nav>
@@ -267,7 +273,7 @@
                   </div>
             </div>
             <div>
-              <button class="btn--primary">
+              <button class="btn--primary" id="addToCart">
                 <div class="icon--left">
                   <i class="icon fas fa-shopping-cart fa-lg"></i>
                 </div>
@@ -348,5 +354,5 @@
   </footer>
 
 	<!-- best practice is to put the js here -->
-	<script src="temp.js"></script></body>
+	<script src="js/index.js"></script></body>
 </html>

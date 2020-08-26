@@ -21,27 +21,34 @@ a{
 
 .header__primary{
   width:100%;
-  height: 5vh;
+  /* height: 5vh; */
   background-color: var(--navbar-1-background);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .logo{
-  min-width: 150px;
+  width: 150px;
   /* height: 10%; */
   /* background-color: green; */
 }
 .header__primary > div{
   /* display: flex; */
-  margin:auto;
+  margin:5px 10px;
+  padding:2px;
   text-align: center;
-  padding:8px;
+  /* padding:8px; */
   /* justify-content: flex-end; */
   /* align-items: flex-end; */
   /* height: 100%; */
   /* padding: 5px 0; */
   /* margin:auto auto; */
+}
+.header__primary .grow{
+  flex-grow: 2;
+}
+.header__primary .grow input{
+  width: 200px;
 }
 .header__secondary{
   width:100%;
